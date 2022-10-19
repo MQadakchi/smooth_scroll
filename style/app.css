@@ -1,0 +1,103 @@
+:root {
+  --primaryColor: #dabfff;
+  --secondaryColor: #4f518c;
+  --textColor: #907ad6;
+  --lightColor: #7fdeff;
+  --darkColor: #2c2a4a;
+}
+
+@font-face {
+  font-family: "vazir";
+  src: url("/fonts/vazir.ttf") format("truetype");
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: vazir;
+  font-weight: normal;
+  direction: rtl;
+  text-align: right;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: inherit;
+}
+::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--darkColor);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--lightColor);
+  border-radius: 25px;
+  box-shadow: 0 0 5px var(--lightColor);
+}
+header {
+  width: 100%;
+  height: 125px;
+  background-color: var(--darkColor);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  inset: 0;
+}
+nav {
+  width: 75%;
+  height: 75%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+nav a {
+  text-decoration: none;
+  color: var(--primaryColor);
+  font-size: 1.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  transition: all 0.3s linear;
+}
+nav a.active {
+  background-color: var(--lightColor);
+  color: var(--darkColor);
+}
+.container {
+  width: 100%;
+  height: auto;
+  margin-top: 125px;
+}
+section {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  color: #fff;
+}
+#section-1 {
+  background-color: crimson;
+}
+#section-2 {
+  background-color: yellowgreen;
+}
+#section-3 {
+  background-color: orangered;
+}
+#section-4 {
+  background-color: blueviolet;
+}
+#section-5 {
+  background-color: green;
+}
